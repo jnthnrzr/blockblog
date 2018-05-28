@@ -1,0 +1,27 @@
+{
+  "name": "blockblog",
+  "version": "1.0.0",
+  "description": "A blog powered by Express and Mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnthnrzr/blockblog.git"
+  },
+  "keywords": [
+    "blog",
+    "es6",
+    "npm",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Jonathan Rozario",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jnthnrzr/blockblog/issues"
+  },
+  "homepage": "https://github.com/jnthnrzr/blockblog#readme"
+}
