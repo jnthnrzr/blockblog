@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import posts from './routes/posts.routes';
 
 let app = express();
 
@@ -11,3 +12,5 @@ app.get('/', (req, res) => res.send('Hello World!'));
 app.listen(3005, () => {
     console.log('server started - 3005');
 });
+
+app.use('/api', posts);
