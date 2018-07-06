@@ -1,16 +1,21 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import connectToDb from './db/connect';
+import config from './config/index';
 import posts from './routes/posts.routes';
 
-let app = express();
+const app = express();
+
+connectToDb();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
-app.listen(3005, () => {
-    console.log('server started - 3005');
+const PORT = config.port;
+app.listen(PORT, () => {
+    console.log(`server started - ${PORT}`);
 });
 
 app.use('/api', posts);
