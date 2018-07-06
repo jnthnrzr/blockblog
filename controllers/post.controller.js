@@ -89,7 +89,7 @@ PostController.updatePost = async (req, res) => {
     catch(err) {
         console.log(err);
     }
-}
+};
 
 /** Delete a post. */
 PostController.deletePost = async (req, res) => {
