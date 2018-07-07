@@ -1,5 +1,8 @@
+require('dotenv').load();
+const mongoUrl = process.env.mongoUrl;
+
 export default {
     "port": 3015,
-    "mongoUrl": "mongodb://localhost:27017/express-api-blog",
+    "mongoUrl": mongoUrl,
     "bodyLimit": "100kb"
 }
